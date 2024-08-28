@@ -5,14 +5,14 @@ import { ContenedorGifs } from './ContenedorGifs'
 //functional component
 export const GifApp = () => {
 
-    const {handleGetGif, gifs} = useGif()
+    const {handleGetGif, gifs, nombreCategoria} = useGif()
 
     return (
         //fragment
         <>
         {/*props = una propiedad que viaja entre componentes*/}
             <BuscarGif handleGetGif={handleGetGif}/>
-            <ContenedorGifs gifs={gifs}/>
+            <ContenedorGifs gifs={gifs} nombreCategoria={nombreCategoria}/>
 
         </>
     )

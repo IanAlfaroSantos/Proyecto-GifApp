@@ -12,9 +12,6 @@ export const BuscarGif = ({handleGetGif}) => {
                     <input type="submit" value="Buscar" className="btn btn-outline-danger text-center"></input>
                 </form>
             </div>
-            <div className="d-flex flex-row justify-content-center alig-items-center mt-3">
-                <input type="text" className="bg-warning text-center ms-5 mt-4" value={categoria} readonly></input>
-            </div>
         </>
     )
 }
